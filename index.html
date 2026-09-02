@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mojica's Work</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">MOJICA'S Work (202410179)</div>
+    <nav class="nav-links">
+      <a href="#tab-home" class="nav-btn active">Home</a>
+      <a href="#tab-activities" class="nav-btn">Activities</a>
+      <a href="#tab-exam" class="nav-btn">Exam</a>
+      <a href="#tab-laboratory" class="nav-btn">Laboratory</a>
+      <a href="#tab-projects" class="nav-btn">Projects</a>
+      <a href="#tab-quizzes" class="nav-btn">Quizzes</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+
+    <!-- About / Home Section -->
+    <section id="tab-home" class="hero-section">
+      <div class="profile-layout">
+        <div class="about-content">
+          <h1 class="glow-title">About Me</h1>
+          <p class="subtitle">
+            Greetings! Welcome! I'm John Daniel S. Mojica, a 20-year-old third-year Computer Science student (BSCS - 3A) at Cavite State University - Silang Campus. 
+            Driven by a genuine curiosity for how things work, I'm focused on building my own skills and picking up practical experience along the way.
+            This portfolio showcases all of my activities, quizzes, and major requirements completed throughout the semester. It highlights both outputs and overall learning progression in one place. 
+             Without further ado, let's connect! My socials are below:
+          </p>
+        </div>
+
+        <div class="hero-picture-wrapper">
+          <img src="pictures/dan.jpg" alt="John Daniel S. Mojica" id="hero-img" class="square-picture">
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/johndaniel.s.mojica" target="_blank" rel="noopener noreferrer" class="social-btn">FB/Messenger @Daniel Mojica</a>
+        <a href="https://github.com/dnlsmojica" target="_blank" rel="noopener noreferrer" class="social-btn">GitHub @dnlsmojica</a>
+        <a href="https://www.instagram.com/dnlsmojica/" target="_blank" rel="noopener noreferrer" class="social-btn">Instagram @dnlsmojica</a>
+      </div>
+    </section>
+
+    <!-- Category Sections Container -->
+    <div class="archive-sections">
+
+      <!-- Activities Section -->
+      <section id="tab-activities" class="folder-card">
+        <div class="folder-header">
+          <h2 class="folder-title">Activities</h2>
+          <div class="actions">
+            <input type="file" id="upload-activities" class="file-input" onchange="uploadFile('activities', event)">
+            <label for="upload-activities" class="neon-btn">+ Add File/s</label>
+          </div>
+        </div>
+        <div class="files-container" id="container-activities">
+          <p class="empty-msg">No files uploaded yet.</p>
+        </div>
+
+      <div class="files-container" id="container-activities">
+        <div class="file-item-card">
+        <div class="file-item-header">
+        <span class="file-badge">JPG</span>
+      </div>
+    
+      <div class="file-info">
+        <div class="file-title">PINAPALITAN NG TITLE.jpg</div>
+      </div>
+
+      <button type="button" class="view-btn" onclick="openModal('pictures/dan.jpg')">Open File</button>
+    </div>
+
+    <div class="file-item-card">
+    <div class="file-item-header">
+    <span class="file-badge">PDF</span>
+  </div>
+  <div class="file-info">
+    <div class="file-title">Activity1.pdf</div>
+  </div>
+  <button class="view-btn" onclick="openStaticFile('pictures/PNU.pdf', 'PNU.pdf')">Open File</button>
+</div>
+    </section>
+
+      <!-- Laboratory Reports Section -->
+      <section id="tab-laboratory" class="folder-card">
+        <div class="folder-header">
+          <h2 class="folder-title">Laboratory Reports (WAR)</h2>
+          <div class="actions">
+            <input type="file" id="upload-laboratory" class="file-input" onchange="uploadFile('laboratory', event)">
+            <label for="upload-laboratory" class="neon-btn">+ Add File/s</label>
+          </div>
+        </div>
+        <div class="files-container" id="container-laboratory">
+          <p class="empty-msg">No files uploaded yet.</p>
+        </div>
+      </section>
+
+      <!-- Major Examinations Section -->
+      <section id="tab-exam" class="folder-card">
+        <div class="folder-header">
+          <h2 class="folder-title">Major Examinations</h2>
+          <div class="actions">
+            <input type="file" id="upload-exam" class="file-input" onchange="uploadFile('exam', event)">
+            <label for="upload-exam" class="neon-btn">+ Add File/s</label>
+          </div>
+        </div>
+        <div class="files-container" id="container-exam">
+          <p class="empty-msg">No files uploaded yet.</p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="tab-projects" class="folder-card">
+        <div class="folder-header">
+          <h2 class="folder-title">Projects</h2>
+          <div class="actions">
+            <input type="file" id="upload-projects" class="file-input" onchange="uploadFile('projects', event)">
+            <label for="upload-projects" class="neon-btn">+ Add File/s</label>
+          </div>
+        </div>
+        <div class="files-container" id="container-projects">
+          <p class="empty-msg">No files uploaded yet.</p>
+        </div>
+      </section>
+
+      <!-- Quizzes Section -->
+      <section id="tab-quizzes" class="folder-card">
+        <div class="folder-header">
+          <h2 class="folder-title">Quizzes</h2>
+          <div class="actions">
+            <input type="file" id="upload-quizzes" class="file-input" onchange="uploadFile('quizzes', event)">
+            <label for="upload-quizzes" class="neon-btn">+ Add File/s</label>
+          </div>
+        </div>
+        <div class="files-container" id="container-quizzes">
+          <p class="empty-msg">No files uploaded yet.</p>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- FILE PREVIEW MODAL -->
+  <div id="file-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
